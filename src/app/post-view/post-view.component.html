@@ -1,0 +1,7 @@
+<h2>{{post.title}}</h2>
+
+<p *ngIf="post.body; else noBody">{{post.body}}</p>
+
+<ng-template #noBody>
+    <p>- No body -</p>
+</ng-template>

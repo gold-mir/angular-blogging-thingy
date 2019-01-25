@@ -1,0 +1,9 @@
+<h2>New Post</h2>
+<div>
+    <input type="text" placeholder="Post Title" class="title-input" #postTitle>
+</div>
+<div>
+    <textarea name="" placeholder="Post Body" #postBody class="body-input" rows=30></textarea>
+</div>
+
+<button (click)="savePost(postTitle.value, postBody.value)">Save Post</button>

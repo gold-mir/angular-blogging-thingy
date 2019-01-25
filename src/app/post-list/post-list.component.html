@@ -1,0 +1,5 @@
+<ul>
+  <li *ngFor="let post of postList">
+    <span (click)="selectPost(post)" class="post-link">{{post.title}}</span>
+  </li>
+</ul>
